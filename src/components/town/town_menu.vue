@@ -42,16 +42,9 @@
                 <el-menu-item index="4-4" route="/townMenu/addBannerPosition">核查栏</el-menu-item>
 
             </el-submenu>
-            <el-submenu index="5">
-                  <template slot="title">
-                  <span>便民服务</span>
-                  </template>
-                  <el-menu-item index="5-1" route="/townMenu/dataList">租客数据统计</el-menu-item>
-                  <el-menu-item index="5-2" route="/townMenu/revenenue">费用收支明细</el-menu-item>
-                  <el-menu-item index="5-3" route="/townMenu/shop">商铺出租率</el-menu-item>
-    
-
-              </el-submenu>
+            <el-menu-item index="5" route="/townMenu/convenience">
+                <span slot="title">便民服务</span>
+            </el-menu-item>
 
                         <el-submenu index="6">
                   <template slot="title">
@@ -88,6 +81,10 @@ export default {
     },
     handleClose(key, keyPath) {
       
+    },
+    pushConven(){
+  
+        this.$router.push("/townMenu/convenience");
     }
   },
   //已测试 组件导航
