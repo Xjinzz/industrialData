@@ -30,8 +30,6 @@ import convencmp from './convenlistcmp'
 export default {
     data(){
         return {
-           
-            bodyTgeClass:"bodyTagClass",
             moduleTwo : "handle",
             handleTitle:"handleTitle",
             activeName:"liveUser",

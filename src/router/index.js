@@ -177,6 +177,8 @@ const towncasebar = () =>
     import ('@/components/town/casebar');
 const convenience = () =>
     import ('@/components/town/Convenience');
+const bigdata = () =>
+    import ('@/components/town/bigdata');
 Vue.use(Router)
 
 export default new Router({
@@ -460,37 +462,54 @@ export default new Router({
 
         },
         {
+            // http://localhost:7000/#/ppp ppp
             path: "/ppp",
             component: pppMenu,
             children: [{
+                // http://localhost:7000/#/ppp/settledEnterprise ppp->项目库管理-》入驻企业
                 path: "settledEnterprise",
                 component: settledEnterprise,
             }, {
+                // http://localhost:7000/#/ppp/projectDetail ppp->项目库管理-》项目详情
                 path: 'projectDetail',
                 component: projectDetail,
             }, {
+                // http://localhost:7000/#/ppp/projectinvestment ppp->项目投资管理-》项目详情
                 path: 'projectinvestment',
                 component: projectinvestment,
             }, {
+                // http://localhost:7000/#/ppp/projectList ppp->项目投资管理-》项目列表
+
                 path: 'projectList',
                 component: projectinvestment,
             }, {
+                // http://localhost:7000/#/ppp/projectInvest ppp->项目投资管理-》投资信息
 
                 path: 'projectInvest',
                 component: projectInvest,
             }, {
+                // http://localhost:7000/#/ppp/bulletinText ppp->招标管理-》公告正文
+
                 path: "bulletinText",
                 component: bulletinText
             }, {
+                // http://localhost:7000/#/ppp/projectList ppp->项目收益分析-》项目列表
+
                 path: "profitlist",
                 component: profitList
             }, {
+                // http://localhost:7000/#/ppp/bulletin ppp->招标管理-》公告摘要
+
                 path: "bulletin",
                 component: bulletin
             }, {
+                // http://localhost:7000/#/ppp/consumptionlist ppp->项目支出管理-》支出清单
+
                 path: "consumptionlist",
                 component: consumptionlist,
             }, {
+                // http://localhost:7000/#/ppp/projectindex ppp->项目投资管理-》首页
+
                 path: "projectindex",
                 component: pppindex,
             }]
@@ -499,6 +518,7 @@ export default new Router({
             path: '/townMenu',
             component: townMenu,
             children: [{
+                    // http: //localhost:7000/#/townMenu/index/center 城镇-》首页
                     path: "index",
                     component: townIndex,
                     children: [{
@@ -514,18 +534,29 @@ export default new Router({
                         },
                     ]
                 }, {
+                    // http: //localhost:7000/#/townMenu/personAdmin 城镇-》人口管理 管理列表
                     path: "personAdmin",
                     component: townpersonAdmin,
                 }, {
+
                     path: "towncasebar",
                     component: towncasebar,
                 },
                 {
+                    // http: //localhost:7000/#/townMenu/liveAdmin 城镇居住管理=》管理列表
                     path: "liveAdmin",
                     component: townliveAdmin,
                 }, {
+                    // http: //localhost:7000/#/townMenu/convenience 城镇=》便民服务
+
                     path: "convenience",
                     component: convenience,
+                },
+                {
+                    // http: //localhost:7000/#/townMenu/convenience 城镇=》便民服务
+
+                    path: "bigdata",
+                    component: bigdata,
                 }
             ],
             //局部导航

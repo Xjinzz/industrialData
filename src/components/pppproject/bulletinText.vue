@@ -71,7 +71,8 @@ export default {
     },
     computed: {
         ...mapState({
-         homeData: state => state.pppProject.bulletin,
+
+         homeData: state => state.pppProject.bulletinText,
       }),
       tableData(){
         return this.homeData.slice(this.start,this.end)

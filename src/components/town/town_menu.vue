@@ -46,18 +46,9 @@
                 <span slot="title">便民服务</span>
             </el-menu-item>
 
-                        <el-submenu index="6">
-                  <template slot="title">
-                  <span>大数据</span>
-                  </template>
-                  <el-menu-item index="6-1" route="/townMenu/adminList">管理员列表</el-menu-item>
-                  <el-menu-item index="6-2" route="/townMenu/streetAddAdmin">添加管理员</el-menu-item>
-                  <el-menu-item index="6-3" route="/townMenu/streetpurChange">权限授权</el-menu-item>
-                  
-    
-
-              </el-submenu>
-
+             <el-menu-item index="6" route="/townMenu/bigdata">
+                <span slot="title">大数据</span>
+            </el-menu-item>
           </el-menu>
     </el-col>
     </div>
