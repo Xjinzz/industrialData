@@ -1,4 +1,6 @@
 <template>
+    <!-- table header -->
+    <!-- table表头公用 -->
   <div>
       <!--表格的通用头部 -->
       <el-row style="background:#fff">

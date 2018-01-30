@@ -4,7 +4,7 @@
       <div class="contente">
           <p>酒店展示</p>
           <ul>
-              <li v-for="i in hotel" class="show-hotel" :style="i.index<4?'margin-top:20px':'margin-top:30px'">
+              <li v-for="i in hotel" class="show-hotel" :key = "i" :style="i.index<4?'margin-top:20px':'margin-top:30px'">
                 
                   <img src="" v-lazy="i.path" :width="i.width" :height="i.height" alt="">
                   
@@ -35,7 +35,7 @@ export default {
 
 }
 </script>
-<style scope>
+<style scoped>
     .contente{
         
         width:1660px;

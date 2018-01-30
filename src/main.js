@@ -1,18 +1,19 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import App from './components/index.vue'
-import router from './router/index.js'
+import App from './components/index_menu'
+import router from './router/index'
 // lazyload插件
 import VueLazyload from "vue-lazyload";
 //引入饿了么组件
 import ElementUI from 'element-ui'
 // vuex
-import store from './store/store.js'
+import store from './store/store'
 // elmentui
 import 'element-ui/lib/theme-chalk/index.css'
 // resetcss
 import '../static/css/reset.css'
+// loading from elment-ui
 import { Loading } from 'element-ui';
 
 Vue.config.productionTip = false
@@ -49,7 +50,7 @@ var vm = new Vue({
     //             })
 
 
-//全局导航输出地址
+//全局导航输出地址 测试route 加载loading
 router.beforeEach((to, from, next) => {
     console.log("进入地址:", to.fullPath);
     var x = 0;
