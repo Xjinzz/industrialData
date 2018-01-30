@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-
 // 酒店相关页面
-
 const hotel = () =>
     import ('../components/hotel/hotelmenu');
 const hotelindex = () =>
@@ -179,6 +176,10 @@ const convenience = () =>
     import ('@/components/town/Convenience');
 const bigdata = () =>
     import ('@/components/town/bigdata');
+const municipalMenu = () =>
+    import ("@/components/municipal/municipalMenu");
+const projectAdmin = () =>
+    import ("@/components/municipal/projectAdmin");
 Vue.use(Router)
 
 export default new Router({
@@ -566,6 +567,13 @@ export default new Router({
             //   next();
             // },
 
+        }, {
+            path: '/municipalMenu',
+            component: municipalMenu,
+            children: [{
+                path: "projectAdmin",
+                component: projectAdmin,
+            }],
         }
     ],
     // 重置页面滚动条

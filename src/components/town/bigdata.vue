@@ -270,8 +270,6 @@ changefrom(){
         that.ins = instance
         //获取当前图表中的数据
         that.echarts = echarts
-       
-        
         //option
         that.barleft = option
         that.barright = option2

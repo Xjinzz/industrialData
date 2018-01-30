@@ -13,7 +13,7 @@ import store from './store/store.js'
 import 'element-ui/lib/theme-chalk/index.css'
 // resetcss
 import '../static/css/reset.css'
-
+import { Loading } from 'element-ui';
 
 Vue.config.productionTip = false
 
@@ -52,6 +52,24 @@ var vm = new Vue({
 //全局导航输出地址
 router.beforeEach((to, from, next) => {
     console.log("进入地址:", to.fullPath);
+    var x = 0;
+    var loadingInstance = Loading.service({
+        fullscreen: true
+    });
+    // load动画 暂时设置为：100/60/2 s 如果取自数据库可以设置数据x为ture 当有数据时设置x为false；
+    var timer = window.requestAnimationFrame(function load() {
+        if (x < 100) {
+            x = x + 2;
+            console.log(x);
+            timer = window.requestAnimationFrame(load);
+        } else {
+            window.cancelAnimationFrame(timer);
+            loadingInstance.close();
+        }
+
+
+
+    });
     next();
 })
 router.afterEach((to, from) => {

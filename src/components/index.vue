@@ -25,7 +25,7 @@
             <router-link :to="townMenu" tag="li">
                 城镇
             </router-link>
-            <router-link :to="hotel" tag="li">
+            <router-link :to="municipalMenu" tag="li">
                 市政
             </router-link>
             <router-link :to="hotel" tag="li">
@@ -51,6 +51,7 @@ export default {
             Industrial:'/Industrial',
             pppMenu:"/ppp",
             townMenu:"/townMenu",
+            municipalMenu:"/municipalMenu",
         }
     },
     components: {
