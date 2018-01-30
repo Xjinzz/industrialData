@@ -1,10 +1,14 @@
 <template>
-  <img src="" v-lazy="'../../../static/img/town/1.jpg'" alt="">
+  <img src="" v-lazy="imgpath" alt="">
 </template>
 
 <script>
 export default {
-
+  data(){
+    return {
+      imgpath:"static/img/town/1.jpg",
+    }
+  }
 }
 </script>
 

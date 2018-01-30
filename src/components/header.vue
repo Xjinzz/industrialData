@@ -6,7 +6,10 @@
       </div>
       <div class="headerright">
           <ul>
-              <li v-for = "(path,index) in imgsrc" :key="index"><img v-lazy="path" alt=""><div></div></li>
+              <li v-for = "(path,index) in imgsrc" :key="index"><img v-lazy="path" alt="">
+              
+              <div></div></li>
+
           </ul>
       </div>
   </div>
@@ -16,9 +19,9 @@ export default {
   data() {
     return {
       imgsrc: [
-        "../../static/img/user.png",
-        "../../static/img/shezhi.png",
-        "../../static/img/shutdown.png"
+        "static/img/user.png",
+        "static/img/shezhi.png",
+        "static/img/shutdown.png"
       ]
     };
   }

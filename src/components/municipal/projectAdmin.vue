@@ -50,7 +50,7 @@
                         </el-menu>
                    </el-col>
                    <el-col :span = "18">
-                       <img src="" v-lazy = "'../../../static/img/municipal/1.jpg'"  alt="" width = "100%">
+                       <img src="" v-lazy="imgUrl"  alt="" width = "100%">
                        
                    </el-col>
                    <el-col :span = "3" class = "project_info">
@@ -73,18 +73,21 @@
     </el-container>
 </template>
 <script>
+import {mapState} from 'vuex'
   export default {
     data() {
       return {
         activeName: 'first',
-        activeName2:"2_1"
+        activeName2:"2_1",
+        imgUrl:"static/img/municipal/1.jpg"
       };
     },
     methods: {
       handleClick(tab, event) {
         console.log(tab, event);
       }
-    }
+    },
+
   };
 </script>
 

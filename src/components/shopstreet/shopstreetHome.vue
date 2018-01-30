@@ -4,7 +4,7 @@
          <el-header class="maintitle">商家入驻</el-header>
         <el-main>
             <ul class="main-content">
-                <li v-for = "i in shopstreetHome" >             
+                <li v-for = "i in shopstreetHome" :key = "i" >             
                   <img src="" v-lazy="i.path" :width="i.width" :height="i.height" alt="">
                   <p>{{ i.shopstreetHome }}</p>
                 </li>

@@ -3,22 +3,22 @@
       <header>
               <div>
                   <p>新增楼宇房源</p>
-                  <p style="background:#1598db"><img src="" v-lazy="'static/img/industrial/icon1.png'" style="margin-top:12px;" alt=""></p>
+                  <p style="background:#1598db"><img src="" v-lazy="path[0]" style="margin-top:12px;" alt=""></p>
                   
               </div>
               <div>
                        <p>新增网点房源</p>
-                  <p style="background:#feb867"><img src="" v-lazy="'static/img/industrial/icon2.png'" style="margin-top:14px;" alt=""></p>
+                  <p style="background:#feb867"><img src="" v-lazy="path[1]" style="margin-top:14px;" alt=""></p>
                   
               </div>
               <div>
                     <p>新增客户</p>
-                  <p style="background:#41aa68"><img src="" v-lazy="'static/img/industrial/icon3.png'" style="margin-top:14px;" alt=""></p>
+                  <p style="background:#41aa68"><img src="" v-lazy="path[2]" style="margin-top:14px;" alt=""></p>
                   
               </div>
               <div>
                    <p>新增合同</p>
-                  <p style="background:#f9e369"><img src="" v-lazy="'static/img/industrial/icon4.png'" style="margin-top:14px;" alt=""></p>
+                  <p style="background:#f9e369"><img src="" v-lazy="path[3]" style="margin-top:14px;" alt=""></p>
                   
               </div>
       </header>
@@ -97,6 +97,9 @@ export default {
             settlement:0,
             tuied:0,
             settlemented:0,
+            path : [
+                'static/img/industrial/icon1.png','static/img/industrial/icon2.png','static/img/industrial/icon3.png','static/img/industrial/icon4.png'
+            ]
         }
     },
     computed:{

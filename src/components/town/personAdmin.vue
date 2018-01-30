@@ -43,7 +43,7 @@
                
         </el-col>
         <el-col :span = "24">
-            <img src="" v-lazy="'../../../static/img/town/2.jpg'" alt="">
+            <img src="" v-lazy="imgpath" alt="">
         </el-col>
       </el-col>
   </div>
@@ -58,6 +58,7 @@ export default {
         buttontwo:"请选择小区",
         buttonthree:"请选择街道",
         buttonfour:"高新区",
+        imgpath :  'static/img/town/2.jpg'
         }
     },
     methods:{
