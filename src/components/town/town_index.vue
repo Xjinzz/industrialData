@@ -120,7 +120,7 @@
   }
 </script>
 
-<style scope>
+<style scoped>
      .el-dropdown {
     vertical-align: top;
   }

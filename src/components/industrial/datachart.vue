@@ -130,7 +130,7 @@ methods:{
 }
 </script>
 
-<style scope>
+<style scoped>
 .el-menu--horizontal .el-menu-item{
     font-size:20px;
     line-height: 72px;

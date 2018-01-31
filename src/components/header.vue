@@ -27,7 +27,7 @@ export default {
   }
 };
 </script>
-<style scope>
+<style scoped>
 .headerleft {
   width: 626px;
   display: inline-block;

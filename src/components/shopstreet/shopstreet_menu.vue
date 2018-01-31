@@ -85,7 +85,7 @@ export default {
   }
 };
 </script>
-<style  scope>
+<style  scoped>
 #menu {
   width: 200px;
   height: 1080px;
